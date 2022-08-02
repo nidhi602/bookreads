@@ -1,0 +1,23 @@
+<header>
+    <div id="navbar">
+        <div id="logo">
+            <a href="explore.php"><img src="img/BookReads1.png" height="100em"></a>
+        </div>
+        <a href="includes/logout_inc.php" onclick="return confirmLogout()"><b>Logout</b></a>
+        <a href="updateprofile.php"><b>Profile</b></a>
+        <a href="mybooks.php"><b>My Books</b></a>
+        <a href="explore.php"><b>Explore</b></a>
+        <div class="search">
+            <form action="search.php" method="get">
+                <input type="text" placeholder="Search..." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function confirmLogout() {
+            return confirm("Logout of your account?");
+        }
+    </script>
+</header>
